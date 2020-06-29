@@ -2,13 +2,29 @@
   <div class="grey lighten-5">
     <v-container>
       <v-row>
-        <v-col cols="12" lg="4" md="4" sm="4" xs="2" v-if="Object.keys(getTvShow).length">
+        <v-col
+          cols="12"
+          lg="4"
+          md="4"
+          sm="4"
+          xs="2"
+          v-if="Object.keys(getTvShow).length"
+        >
           <img :src="getTvShow.image.medium" alt="actor" height="405px" />
         </v-col>
         <v-col cols="12" lg="1" md="1" sm="1" xs="1"></v-col>
-        <v-col cols="12" lg="6" md="6" sm="8" xs="2" v-if="Object.keys(getTvShow).length">
+        <v-col
+          cols="12"
+          lg="6"
+          md="6"
+          sm="8"
+          xs="2"
+          v-if="Object.keys(getTvShow).length"
+        >
           <div class="text-center">
-            <h2>{{ getTvShow.name }}({{ getTvShow.premiered.substring(0, 4) }})</h2>
+            <h2>
+              {{ getTvShow.name }}({{ getTvShow.premiered.substring(0, 4) }})
+            </h2>
           </div>
           <br />
           <div class="text-center">{{ getTvShow.rating.average }}/10</div>
